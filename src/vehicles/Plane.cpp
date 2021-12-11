@@ -920,7 +920,7 @@ CPlane::UpdatePlanes(void)
 	PlanePath3Speed[2] = CRUISE_SPEED*t;
 	PlanePath3Speed[3] = CRUISE_SPEED*t;
 
-	if(FindPlayerVehicle() && (FindPlayerVehicle()->GetVehicleAppearance() == VEHICLE_APPEARANCE_HELI ||
+/*	if(FindPlayerVehicle() && (FindPlayerVehicle()->GetVehicleAppearance() == VEHICLE_APPEARANCE_HELI ||
 	                           FindPlayerVehicle()->GetVehicleAppearance() == VEHICLE_APPEARANCE_PLANE))
 		LastTimeInPlane = CTimer::GetTimeInMilliseconds();
 	else
@@ -962,6 +962,7 @@ CPlane::UpdatePlanes(void)
 		}
 	}else if(CTimer::GetTimeInMilliseconds() - LastTimeInPlane > 10000)
 		RemoveTemporaryPlanes();
+*/
 }
 
 void
